@@ -1,4 +1,4 @@
 ### My Articles
 
-· HTML
-· PDF
+- HTML
+- PDF
