@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./myhtmlarticles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script>
+     const vars = {
+        "imageURL": 'https://live.staticflickr.com/65535/49757380101_5dcf8966c5_b.jpg',
+        "description": "From his \"biggest mistake of his life\" to a constant widely important in astrophysics, Einstein's Cosmological constant has been a misterious for over 7 decades.",
+        "title": "The Cosmological Constant",
+        "url": "my url",
+        "site_name": "Mel's Blog"
+     }
+
+     function article(){
+        metas();
+        let content = document.getElementsByTagName("article")[0].innerHTML;
+        let body = document.getElementById("article");
+
+        body.innerHTML = "<h1>"+vars["title"]+"</h1>" +'<p id="description">'+vars["description"] + '</p>' + '<p id="author">Melany Nadine Monroy Icaza</p>' +'<img src='+vars["imageURL"]+'>' + '<article>'+content+'</article>';
+     }
+
+     function metas(){
+        let head = document.getElementsByTagName("HEAD")[0];
+        head.innerHTML += '<title>'+vars["title"]+'</title>'
+        + '<meta property="og:title" content="'+vars["title"]+'">'
+        + '<meta property="og:image" content="'+vars["imageURL"]+'">'
+        + '<meta property="og:site_name" content="'+vars["site_name"]+'">'
+        + '<meta property="og:url" content="'+vars["url"]+'">';
+        var metaDescription = document.createElement('meta');
+        metaDescription.setAttribute('property','og:description');
+        metaDescription.content = vars["description"];
+        head.appendChild(metaDescription);
+        return head;
+     }
+
+  </script>
+</head>
+
+<body onload="article();">
+   <section id="article">
+      <article>
+      There have been debates about the cosmological constant since it was first proposed in 1917 as a
+      parameter that, when inserted into the original gravitational field equation, would have as one of the
+      solutions what could be interpreted as proof that the universe remains static. However, in 1931, when
+      Hubble (for whom the most famous telescope in the field was named) discovered the first glimpses of
+      what appeared to be an expanding universe, Einstein didn’t take long to recognize his apparent error
+      and called it "the biggest mistake of his life" (quoted in Gamow, 1970), and since then, the core of the
+      debate has been the existence or not of this constant, given that following Hubble's discovery, and until
+      1998, astronomers attributed to the constant a value of zero. What happened in 1998 that reignited the
+      debate about the cosmological constant, and for which research continues to this day? Well, in 1998 the
+      Supernova cosmology project reported the first evidence for a positive, low-density cosmological
+      constant that will "expand the universe forever" [Cosmology from Type la Spernovae, 1998, arXiv].
+      <br>
+      In simpler terms, Einstein claimed, by introducing the cosmological constant (with a value of 0), that
+      the universe remains static; he even claimed that the shape of the universe would be a sphere whose
+      mass was determined by an equation that for the sake of simplicity is not intended to be shown here.
+      All this began after completing his formulations of general relativity in 1915-1916; Einstein, in 1917,
+      tried to apply his new theory to the entire universe. For this purpose, he started from the hypothesis that
+      the universe was static; however, no static solution to his original equations (other than Newtonian
+      gravitation) could be found, so he modified them by adding a new term involving a parameter Λ; the
+      cosmological constant [Steven Weinberg, 1989], was born.
+      <br>
+      Up to the time when the first glimpses of an expanding universe were discovered (1931, as previously
+      mentioned) there was the concept that the cosmological constant, its very existence, must be
+      intrinsically related to a static universe; in other words, and following the logic of the premises, the
+      contradiction of a static universe implied at that time the contradiction of the existence of the
+      cosmological constant. This could be seen in the reaction of the physics community and even of
+      Einstein himself to the new discovery, denying the cosmological constant and attributing its conception
+      to an error, respectively. By the time Steven Weinberg, a respected scientist who was honored after his
+      death in 2021, wrote his essay entitled "The Problem of the Cosmological Constant" and as mentioned
+      therein, the physics community was beginning to have doubts about the depreciation of the constant; in
+      his words at the time: "Physics is going through a crisis".
+      <br>
+      That is, by the time the Supernova cosmology project had published its results (1998), the existence of
+      the cosmological constant was already being discussed in the scientific community, but this time, with
+      a value different from zero; already in 1995 Lawrence Krauss and Michael Turner published an article
+      in Springer, entitled "The cosmological constant is back". In it they argued that a series of observations
+      would suggest that the universe has a non-zero cosmological constant. It can be inferred then that by
+      the time the Supernova cosmology project had published the results, they were already anticipated by
+      the physics community, so this discovery would have only confirmed something that had been
+      suspected since the late 1980s.
+      <br>
+      Despite the fact that this discovery has been practically two decades in the making, it is a "novelty" for
+      many, even in areas where there are many supporters of science and philosophy; Many are unaware
+      that the universe is expanding, and how this relates to the concept of "time", and of course, being
+      philosophy the field that tackles science from an existential approach, the meaning of time and space,
+      especially when it comes to an expanding universe, is discussed in several spaces dedicated to this
+      branch as something still static, or even as something about which "perception has changed in recent
+      years".
+      <br>
+      It is revealed that in spite of the popular knowledge on the subject, the cosmological constant is real
+      and even a numerical value has been attributed to it, product of the investigations carried out during
+      these last two decades.
+      <br>
+      It is revealed that in spite of the popular knowledge on the subject, the cosmological constant is real
+      and even a numerical value has been attributed to it, product of the investigations carried out during
+      these last two decades.
+      <br>
+      There is no doubt at present, the cosmological constant exists and the universe is undoubtedly
+      expanding. Einstein himself would probably have been surprised to learn that there was no mistake
+      after all, and moreover, that it was certainly not the biggest of his life.
+      </article>
+   </section>
+</body>
+
+</html>
